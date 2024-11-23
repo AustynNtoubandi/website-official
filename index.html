@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>DESIGN BY AUSTYN</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Graphic & Web Designer</h2>
+            <p>I design visually stunning and user-friendly creations that make an impact. Let’s create something amazing together!</p>
+            <a href="#portfolio" class="btn scroll-to">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="LOGOS/980FDF84-ED34-4816-AB5F-B0FB761D0123_1_201_a.heic" alt="Photo of Your Name">
+                <div>
+                    <p>Hello! My name is <strong>Austyn Ntoubandi</strong>. I’m a 20-year-old digital design student at Artevelde University of Applied Sciences in Belgium. I’m passionate about graphic design, web design, and branding. My goal is to transform creative ideas into visually appealing designs.</p>
+                    <p>Outside of my studies, I work on freelance projects to further hone my skills. I believe in minimalist, functional design with attention to detail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Graphic Design</h3>
+                    <p>Logos, posters, business cards, and branding that tell your story.</p>
+                </div>
+                <div class="skill">
+                    <h3>Web Design</h3>
+                    <p>Responsive and user-friendly websites tailored to your style.</p>
+                </div>
+                <div class="skill">
+                    <h3>Tools</h3>
+                    <p>Proficient in Adobe Illustrator, Photoshop, Figma, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="portfolio-grid">
+                <div class="project" data-project="project1">
+                    <img src="LOGOS/Frame 14.png">
+                    <h3>Logo Design</h3>
+                </div>
+                <div class="project" data-project="project2">
+                    <img src="LOGOS/DESIGN.BY.AUSTYN_logo.png">
+                    <h3>Logo Design</h3>
+                </div>
+                <div class="project" data-project="project3">
+                    <img src="LOGOS/LM-SOLUTIONS_logo_black.png">
+                    <h3>Logo Design</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Popup -->
+    <div id="portfolio-popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="popup-title"></h3>
+            <img id="popup-image" src="" alt="Project Image">
+            <p id="popup-description"></p>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Let’s collaborate on your next project!</p>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                
+                <button type="submit" class="btn">Send</button>
+            </form>
+            <p id="form-success" class="hidden">Your message has been sent! Thank you for reaching out.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Your Name. Designed with passion in Belgium.</p>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            
+        </ul>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
